@@ -1,0 +1,16 @@
+@base_url=http://localhost:3001
+
+GET {{base_url}}/users
+Content-Type: application/json
+
+###
+POST {{base_url}}/register
+Content-Type: application/json
+
+{
+    "firstname": "John",
+    "Lastname": "Doe",
+    "email": "john@test.com",
+    "password": "1234",
+    "is_admin": true
+}
